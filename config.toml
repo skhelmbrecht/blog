@@ -2,43 +2,71 @@ baseURL = 'https://skhelmbrecht.github.io/blog'
 title = "Sarah Helmbrecht"
 languageCode = 'en-us'
 theme = 'CleanWhite'
+preserveTaxonomyNames = true
+paginate = 5
+hasCJKLanguage = true
+sectionPagesMenu = 'main'
 
 [outputs]
 home = ["HTML", "RSS"]
 
+[markup.goldmark.renderer]
+unsafe = true
+
+[permalinks]
+  post = "/:year/:month/:slug/"
+  top = "/:filename/"
+
+[menu]
+[[menu.main]]
+  name = "Home"
+  href = "/"
+  weight = 10
+[[menu.main]]
+  name = "About Me"
+  href = "/about/"
+  weight = 20
+
 [params]
-header_image = "img/Banner_Image.jpeg"
-SEOTitle = "Sarah Helmbrecht"
-description = "A place to share my projects"
-keyword = "Computer Science, Mathematics, Math"
+  header_image = "img/Banner_Image.jpeg"
+  SEOTitle = "Sarah Helmbrecht"
+  description = "A place to share my projects"
+  keyword = "Computer Science, Mathematics, Math"
+  mainSections = ["blog"]
+  showtoc = false
 
-title_404 = "Sorry, this page does not exist."
-omit_categories = false
+  title_404 = "Sorry, this page does not exist."
+  omit_categories = false
 
-# leancloud storage for page view counter
-page_view_conter = false
-leancloud_app_id = ""
-leancloud_app_key = ""
+  # leancloud storage for page view counter
+  page_view_conter = false
+  leancloud_app_id = ""
+  leancloud_app_key = ""
 
-# Sidebar settings
-sidebar_about_description = "I am a third-year Mathematics and Computer Science student at Tulane University. I am graduating a year early in May 2023. Next fall, I will be attending New York University for my M.S. in Mathematics."
-sidebar_avatar = "img/Profile_Photo.jpeg"
+  algolia_search = true
+  algolia_appId = "4baa257e-2429-40af-bdb5-2e6e94919117"
+  algolia_indexName = "sarahs_index"
+  algolia_apiKey = "d77958e7aee1270ac820002b04b85e5244650c0e"
 
-featured_tags = true
-featured_condition_size = 1
+  # Sidebar settings
+  sidebar_about_description = "I am a third-year Mathematics and Computer Science student at Tulane University. I am graduating a year early in May 2023. Next fall, I will be attending New York University for my M.S. in Mathematics."
+  sidebar_avatar = "img/Profile_Photo.jpeg"
 
-friends = true
-bookmarks = false
-about_me = true
+  featured_tags = false
+  featured_condition_size = 1
 
-[params.social]
-rss = true
-email = "skhelmbrecht@gmail.com"
-linkedin = "https://www.linkedin.com/in/sarah-helmbrecht/"
+  friends = false
+  bookmarks = false
+  about_me = true
 
-[[params.additional_menus]]
-title = "ABOUT"
-href = "/about/"
+  [params.social]
+  rss = true
+  email = "skhelmbrecht@gmail.com"
+  linkedin = "https://www.linkedin.com/in/sarah-helmbrecht/"
+
+  [[params.additional_menus]]
+  title = "ABOUT"
+  href = "/about/"
 
 [markup]
   [markup.tableOfContents]

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Sarah Helmbrecht</title>
+    <link>https://skhelmbrecht.github.io/blog/blog/</link>
+    <description>Recent content in Blogs on Sarah Helmbrecht</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 May 2023 02:35:32 -0500</lastBuildDate><atom:link href="https://skhelmbrecht.github.io/blog/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Science Final</title>
+      <link>https://skhelmbrecht.github.io/blog/blog/data-science-final/</link>
+      <pubDate>Sun, 07 May 2023 02:35:32 -0500</pubDate>
+      
+      <guid>https://skhelmbrecht.github.io/blog/blog/data-science-final/</guid>
+      <description>&amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt; /&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; | Copyright (c) Jupyter Development Team. | Distributed under the terms of the Modified BSD License. |&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-/
+/* The following CSS variables define the main, public API for styling JupyterLab. These variables should be used by all plugins wherever possible. In other words, plugins should not define custom colors, sizes, etc unless absolutely necessary. This enables users to change the visual theme of JupyterLab by changing these variables.</description>
+    </item>
+    
+  </channel>
+</rss>
