@@ -6,11 +6,15 @@ theme = 'CleanWhite'
 [outputs]
 home = ["HTML", "RSS"]
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
 header_image = "img/Banner_Image.jpeg"
 SEOTitle = "Sarah Helmbrecht"
 description = "A place to share my projects"
 keyword = "Computer Science, Mathematics, Math"
+mainSections = ["blog"]
 
 title_404 = "Sorry, this page does not exist."
 omit_categories = false
