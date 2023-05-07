@@ -1,9 +1,9 @@
----
-title: "Data Science Final"
-date: 2023-05-07T02:35:32-05:00
-draft: false
----
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>MusicAnalysis</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -4981,7 +4981,7 @@ form{
   .bp3-running-text table th, table.bp3-html-table th{
     color:#182026;
     font-weight:600; }
-
+  
   .bp3-running-text table td,
   table.bp3-html-table td{
     color:#182026; }
@@ -14721,7 +14721,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -14809,7 +14809,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -14850,7 +14850,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -14956,14 +14956,14 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <button class="colab-df-convert" onclick="convertToInteractive('df-ee47fffb-8a71-468b-be81-12dfc4aaa13e')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
-
+        
   <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
        width="24px">
     <path d="M0 0h24v24H0V0z" fill="none"/>
     <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
   </svg>
       </button>
-
+      
   <style>
     .colab-df-container {
       display:flex;
@@ -15028,7 +15028,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       </script>
     </div>
   </div>
-
+  
 </div>
 
 </div>
@@ -15098,7 +15098,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   <span class="c1">#Create a string of the URL to pass to pandas to read</span>
   <span class="n">tempURL</span> <span class="o">=</span> <span class="s2">"https://kworb.net/spotify/"</span> <span class="o">+</span> <span class="n">tempstr</span>
   <span class="c1">#Read the URL and then add table to a temporary dataframe</span>
-  <span class="n">tempdf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="n">tempURL</span><span class="p">)</span>
+  <span class="n">tempdf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="n">tempURL</span><span class="p">)</span> 
   <span class="n">df_temp</span> <span class="o">=</span> <span class="n">tempdf</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
   <span class="c1">#Adjust dataframes as they come in</span>
 
@@ -15107,15 +15107,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   <span class="n">df_temp</span><span class="p">[</span><span class="s2">"Artist"</span><span class="p">],</span> <span class="n">df_temp</span><span class="p">[</span><span class="s2">"Title"</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_cols</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">new_cols</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 
 <span class="c1">#Create df with relevant columns in proper order</span>
-  <span class="n">df_temp</span> <span class="o">=</span> <span class="n">df_temp</span><span class="p">[[</span><span class="s2">"Pos"</span><span class="p">,</span>
-                         <span class="s2">"P+"</span><span class="p">,</span>
-                         <span class="s2">"Artist"</span><span class="p">,</span>
+  <span class="n">df_temp</span> <span class="o">=</span> <span class="n">df_temp</span><span class="p">[[</span><span class="s2">"Pos"</span><span class="p">,</span> 
+                         <span class="s2">"P+"</span><span class="p">,</span> 
+                         <span class="s2">"Artist"</span><span class="p">,</span> 
                          <span class="s2">"Title"</span><span class="p">,</span>
                          <span class="s2">"Streams"</span>
                          <span class="p">]]</span>
   <span class="n">df_temp</span><span class="p">[</span><span class="s2">"Country"</span><span class="p">]</span> <span class="o">=</span> <span class="n">country_mark</span>
   <span class="n">df_spotify</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_spotify</span><span class="p">,</span> <span class="n">df_temp</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
+  
 <span class="c1">#Display our resulting dataframe</span>
 <span class="n">df_spotify</span>
 </pre></div>
@@ -15134,12 +15134,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>&lt;ipython-input-54-f20365b2652f&gt;:45: SettingWithCopyWarning:
+<pre>&lt;ipython-input-54-f20365b2652f&gt;:45: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -15151,7 +15151,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -15293,14 +15293,14 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
       <button class="colab-df-convert" onclick="convertToInteractive('df-63b103c4-d613-499a-b02a-8e5046274b60')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
-
+        
   <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
        width="24px">
     <path d="M0 0h24v24H0V0z" fill="none"/>
     <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
   </svg>
       </button>
-
+      
   <style>
     .colab-df-container {
       display:flex;
@@ -15365,7 +15365,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
       </script>
     </div>
   </div>
-
+  
 </div>
 
 </div>
@@ -15413,7 +15413,7 @@ Let's familiarize ourself with this data by looking at some summary statistics a
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -15474,7 +15474,7 @@ Name: Streams, dtype: float64</pre>
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -15488,7 +15488,7 @@ Name: Streams, dtype: float64</pre>
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -15555,7 +15555,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -15576,7 +15576,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -15708,14 +15708,14 @@ jp-needs-light-background
       <button class="colab-df-convert" onclick="convertToInteractive('df-bd65b56d-dcde-4e92-a7d8-d8d3954418d4')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
-
+        
   <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
        width="24px">
     <path d="M0 0h24v24H0V0z" fill="none"/>
     <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
   </svg>
       </button>
-
+      
   <style>
     .colab-df-container {
       display:flex;
@@ -15780,7 +15780,7 @@ jp-needs-light-background
       </script>
     </div>
   </div>
-
+  
 </div>
 
 </div>
@@ -15827,7 +15827,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -15841,7 +15841,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -15900,7 +15900,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -15912,7 +15912,7 @@ Metro Boomin        394
 The Weeknd          247
 RM                  145
 Feid                140
-                   ...
+                   ... 
 Hamo ElTikha          1
 Ramy Sabry            1
 Disco Misr            1
@@ -15968,7 +15968,7 @@ Name: Artist, Length: 2854, dtype: int64</pre>
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -15982,7 +15982,7 @@ Name: Artist, Length: 2854, dtype: int64</pre>
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16049,7 +16049,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -16395,14 +16395,14 @@ jp-needs-light-background
       <button class="colab-df-convert" onclick="convertToInteractive('df-344d8408-6ecf-4d9d-b6a0-3152423bf883')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
-
+        
   <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
        width="24px">
     <path d="M0 0h24v24H0V0z" fill="none"/>
     <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
   </svg>
       </button>
-
+      
   <style>
     .colab-df-container {
       display:flex;
@@ -16467,7 +16467,7 @@ jp-needs-light-background
       </script>
     </div>
   </div>
-
+  
 </div>
 
 </div>
@@ -16522,7 +16522,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -16536,7 +16536,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16623,7 +16623,7 @@ jp-needs-light-background
   <span class="c1">#print(country_mark)</span>
   <span class="n">tempURL</span> <span class="o">=</span> <span class="s2">"https://kworb.net/spotify/"</span> <span class="o">+</span> <span class="n">tempstr</span>
   <span class="c1">#print(tempURL)</span>
-  <span class="n">tempdf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="n">tempURL</span><span class="p">)</span>
+  <span class="n">tempdf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="n">tempURL</span><span class="p">)</span> 
   <span class="n">df_temp</span> <span class="o">=</span> <span class="n">tempdf</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
   <span class="c1">#Adjust dataframes as they come in</span>
 
@@ -16656,7 +16656,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -16978,14 +16978,14 @@ jp-needs-light-background
       <button class="colab-df-convert" onclick="convertToInteractive('df-d2162c6c-3d5c-43f1-9cc9-9f4ba138a4ff')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
-
+        
   <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
        width="24px">
     <path d="M0 0h24v24H0V0z" fill="none"/>
     <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
   </svg>
       </button>
-
+      
   <style>
     .colab-df-container {
       display:flex;
@@ -17050,7 +17050,7 @@ jp-needs-light-background
       </script>
     </div>
   </div>
-
+  
 </div>
 
 </div>
@@ -17105,7 +17105,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -17427,14 +17427,14 @@ jp-needs-light-background
       <button class="colab-df-convert" onclick="convertToInteractive('df-a562ca65-8f26-446d-989d-9cc7ed764446')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
-
+        
   <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
        width="24px">
     <path d="M0 0h24v24H0V0z" fill="none"/>
     <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
   </svg>
       </button>
-
+      
   <style>
     .colab-df-container {
       display:flex;
@@ -17499,7 +17499,7 @@ jp-needs-light-background
       </script>
     </div>
   </div>
-
+  
 </div>
 
 </div>
@@ -17549,7 +17549,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -17871,14 +17871,14 @@ jp-needs-light-background
       <button class="colab-df-convert" onclick="convertToInteractive('df-ab26a629-df24-48d1-8278-76426a417dd9')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
-
+        
   <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
        width="24px">
     <path d="M0 0h24v24H0V0z" fill="none"/>
     <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
   </svg>
       </button>
-
+      
   <style>
     .colab-df-container {
       display:flex;
@@ -17943,7 +17943,7 @@ jp-needs-light-background
       </script>
     </div>
   </div>
-
+  
 </div>
 
 </div>
@@ -17990,7 +17990,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -18035,7 +18035,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18111,7 +18111,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -18865,14 +18865,14 @@ jp-needs-light-background
       <button class="colab-df-convert" onclick="convertToInteractive('df-e94937c1-8bd2-4579-a6a4-a5483cdeccd3')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
-
+        
   <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
        width="24px">
     <path d="M0 0h24v24H0V0z" fill="none"/>
     <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
   </svg>
       </button>
-
+      
   <style>
     .colab-df-container {
       display:flex;
@@ -18937,7 +18937,7 @@ jp-needs-light-background
       </script>
     </div>
   </div>
-
+  
 </div>
 
 </div>
@@ -19031,7 +19031,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -19233,14 +19233,14 @@ jp-needs-light-background
       <button class="colab-df-convert" onclick="convertToInteractive('df-e298ceba-5ff8-457a-aafa-379984f6f4e3')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
-
+        
   <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
        width="24px">
     <path d="M0 0h24v24H0V0z" fill="none"/>
     <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
   </svg>
       </button>
-
+      
   <style>
     .colab-df-container {
       display:flex;
@@ -19305,7 +19305,7 @@ jp-needs-light-background
       </script>
     </div>
   </div>
-
+  
 </div>
 
 </div>
@@ -19361,7 +19361,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -19563,14 +19563,14 @@ jp-needs-light-background
       <button class="colab-df-convert" onclick="convertToInteractive('df-cdf46a80-bd01-4af2-bb29-eedf1d711c34')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
-
+        
   <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
        width="24px">
     <path d="M0 0h24v24H0V0z" fill="none"/>
     <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
   </svg>
       </button>
-
+      
   <style>
     .colab-df-container {
       display:flex;
@@ -19635,7 +19635,7 @@ jp-needs-light-background
       </script>
     </div>
   </div>
-
+  
 </div>
 
 </div>
@@ -19669,7 +19669,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -19742,7 +19742,7 @@ dtype: object</pre>
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -19811,7 +19811,7 @@ dtype: object</pre>
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -19864,7 +19864,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -19949,7 +19949,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -20254,14 +20254,14 @@ jp-needs-light-background
       <button class="colab-df-convert" onclick="convertToInteractive('df-7049be75-89da-4719-a7ed-b532c9a231ea')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
-
+        
   <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
        width="24px">
     <path d="M0 0h24v24H0V0z" fill="none"/>
     <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
   </svg>
       </button>
-
+      
   <style>
     .colab-df-container {
       display:flex;
@@ -20326,7 +20326,7 @@ jp-needs-light-background
       </script>
     </div>
   </div>
-
+  
 </div>
 
 </div>
@@ -20373,7 +20373,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -20418,7 +20418,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -20547,7 +20547,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -20572,7 +20572,7 @@ jp-needs-light-background
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Instantiate new RandomForestRegressor with best parameters</span>
-<span class="n">rnd</span> <span class="o">=</span> <span class="n">RandomForestRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="n">best_params</span><span class="p">[</span><span class="s2">"n_estimators"</span><span class="p">],</span>
+<span class="n">rnd</span> <span class="o">=</span> <span class="n">RandomForestRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="n">best_params</span><span class="p">[</span><span class="s2">"n_estimators"</span><span class="p">],</span> 
                             <span class="n">max_depth</span><span class="o">=</span><span class="n">best_params</span><span class="p">[</span><span class="s2">"max_depth"</span><span class="p">],</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">rnd</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </pre></div>
@@ -20591,7 +20591,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
@@ -20649,7 +20649,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -20774,7 +20774,7 @@ jp-needs-light-background
 
 <div class="jp-OutputArea-child">
 
-
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 

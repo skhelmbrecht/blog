@@ -2,6 +2,9 @@ baseURL = 'https://skhelmbrecht.github.io/blog'
 title = "Sarah Helmbrecht"
 languageCode = 'en-us'
 theme = 'CleanWhite'
+preserveTaxonomyNames = true
+paginate = 5
+hasCJKLanguage = true
 
 [outputs]
 home = ["HTML", "RSS"]
@@ -9,40 +12,43 @@ home = ["HTML", "RSS"]
 [markup.goldmark.renderer]
 unsafe = true
 
+[permalinks]
+  post = "/:year/:month/:slug/"
+
 [params]
-header_image = "img/Banner_Image.jpeg"
-SEOTitle = "Sarah Helmbrecht"
-description = "A place to share my projects"
-keyword = "Computer Science, Mathematics, Math"
-mainSections = ["blog"]
+  header_image = "img/Banner_Image.jpeg"
+  SEOTitle = "Sarah Helmbrecht"
+  description = "A place to share my projects"
+  keyword = "Computer Science, Mathematics, Math"
+  mainSections = ["blog"]
 
-title_404 = "Sorry, this page does not exist."
-omit_categories = false
+  title_404 = "Sorry, this page does not exist."
+  omit_categories = false
 
-# leancloud storage for page view counter
-page_view_conter = false
-leancloud_app_id = ""
-leancloud_app_key = ""
+  # leancloud storage for page view counter
+  page_view_conter = false
+  leancloud_app_id = ""
+  leancloud_app_key = ""
 
-# Sidebar settings
-sidebar_about_description = "I am a third-year Mathematics and Computer Science student at Tulane University. I am graduating a year early in May 2023. Next fall, I will be attending New York University for my M.S. in Mathematics."
-sidebar_avatar = "img/Profile_Photo.jpeg"
+  # Sidebar settings
+  sidebar_about_description = "I am a third-year Mathematics and Computer Science student at Tulane University. I am graduating a year early in May 2023. Next fall, I will be attending New York University for my M.S. in Mathematics."
+  sidebar_avatar = "img/Profile_Photo.jpeg"
 
-featured_tags = true
-featured_condition_size = 1
+  featured_tags = true
+  featured_condition_size = 1
 
-friends = true
-bookmarks = false
-about_me = true
+  friends = true
+  bookmarks = false
+  about_me = true
 
-[params.social]
-rss = true
-email = "skhelmbrecht@gmail.com"
-linkedin = "https://www.linkedin.com/in/sarah-helmbrecht/"
+  [params.social]
+  rss = true
+  email = "skhelmbrecht@gmail.com"
+  linkedin = "https://www.linkedin.com/in/sarah-helmbrecht/"
 
-[[params.additional_menus]]
-title = "ABOUT"
-href = "/about/"
+  [[params.additional_menus]]
+  title = "ABOUT"
+  href = "/about/"
 
 [markup]
   [markup.tableOfContents]
