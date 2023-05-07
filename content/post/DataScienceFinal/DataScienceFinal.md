@@ -10,8 +10,6 @@ draft: false
 # The Most Famous Musicians You've Never Heard of
 By Sarah Helmbrecht and JT McDermott
 
-https://skhelmbrecht.github.io/datasciencefinal
-
 ## **I. Introduction**
 
 
